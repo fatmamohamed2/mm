@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Memories</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#fff7fb;
+    color:#444;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+nav h2{
+    color:#ff4fa3;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#555;
+    transition:.3s;
+}
+
+nav a:hover,
+.active{
+    color:#ff4fa3;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+    color:#ff4fa3;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#666;
+    font-size:18px;
+}
+
+/* Timeline */
+
+.timeline{
+    width:80%;
+    margin:50px auto;
+    border-left:4px solid #ff4fa3;
+    padding-left:30px;
+}
+
+.memory{
+    background:white;
+    margin-bottom:35px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    position:relative;
+}
+
+.memory::before{
+    content:"";
+    position:absolute;
+    left:-42px;
+    top:30px;
+    width:18px;
+    height:18px;
+    background:#ff4fa3;
+    border-radius:50%;
+}
+
+.memory h2{
+    color:#ff4fa3;
+    margin-bottom:10px;
+}
+
+.memory span{
+    color:#999;
+    font-size:14px;
+}
+
+.memory p{
+    margin-top:15px;
+    line-height:1.8;
+}
+
+/* Photo Cards */
+
+.photos{
+    padding:70px 8%;
+}
+
+.photos h2{
+    text-align:center;
+    color:#ff4fa3;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+    color:#ff4fa3;
+}
+
+.card p{
+    padding:0 15px 20px;
+    color:#666;
+}
+
+footer{
+    background:#ff4fa3;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.timeline{
+    width:90%;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+
+<h2>❤️ Our Story</h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Her</a></li>
+<li><a href="memories.html" class="active">Memories</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="letter.html">Letter</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Our Beautiful Memories 💕</h1>
+
+<p>
+Every moment with you became a memory I'll always treasure.
+</p>
+
+</section>
+
+<section class="timeline">
+
+<div class="memory">
+<h2>The Day We Met</h2>
+<span>October 2024</span>
+<p>
+This was the beginning of our amazing friendship.
+I never imagined that meeting you would become one of the best things in my life.
+</p>
+</div>
+
+<div class="memory">
+<h2>Our First Photo Together</h2>
+<span>14-4-2025</span>
+<p>
+The smile in that picture still reminds me how happy we were together.
+</p>
+</div>
+
+<div class="memory">
+<h2>Our Funniest Day</h2>
+<span>7-5-2025</span>
+<p>
+We laughed so much that day, and every time I remember it, I smile again.
+</p>
+</div>
+
+<div class="memory">
+<h2>More Memories to Come</h2>
+<span>Forever Friends ❤️</span>
+<p>
+Our story isn't finished yet. The best memories are still waiting for us.
+</p>
+</div>
+
+</section>
+
+<section class="photos">
+
+<h2>Favorite Moments 📸</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="images/5.jpg" alt="">
+<h3>Our First Selfie</h3>
+<p>A beautiful memory we'll never forget.</p>
+</div>
+
+<div class="card">
+<img src="images/2.jpg" alt="">
+<h3>Best Day Ever</h3>
+<p>One of the happiest days we've shared.</p>
+</div>
+
+<div class="card">
+<img src="images/6.jpg" alt="">
+<h3>Laughing Together</h3>
+<p>Every laugh with you is unforgettable.</p>
+</div>
+
+<div class="card">
+<img src="images/7.jpg" alt="">
+<h3>Forever Friends</h3>
+<p>No matter what happens, our friendship will always remain.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+Made with ❤️ for My Best Friend
+</footer>
+
+</body>
+</html>
+```
